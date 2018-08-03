@@ -1,6 +1,7 @@
 import { GalacticAge } from './../src/galactic-age';
 
 describe('GalacticAge', function(){
+  let testUser;
   beforeEach(function(){
     testUser = new GalacticAge(24);
   });
