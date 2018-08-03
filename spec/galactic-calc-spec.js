@@ -14,6 +14,14 @@ describe('GalacticAge', function(){
   });
 
   it('will return the users age in mercury years', function(){
-    expect(testUser.mercuryAge()).toEqual(5)
+    expect(testUser.diffPlanetAge('mercury')).toEqual(5)
+  });
+
+  it('will return the users age in venus years', function(){
+    expect(testUser.diffPlanetAge('venus')).toEqual(14)
+  });
+
+  it('will return the users age in mars years', function(){
+    expect(testUser.diffPlanetAge('mars')).toEqual(14)
   });
 });

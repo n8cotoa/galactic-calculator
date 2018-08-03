@@ -11,9 +11,11 @@ export class GalacticAge {
     return ageInSeconds;
   }
 
-  mercuryAge() {
-    const mercuryYear = 0.24;
-    let ageOnMercury = Math.floor(((this.age / (365 * 24 * 60 * 60 )) * mercuryYear));
-    return ageOnMercury;
+  diffPlanetAge(input) {
+    let planet = input.toLowerCase();
+    const planets = {mercury: 0.24, venus: 0.62};
+    let ageOnOtherPlanet = Math.floor(((this.age / (365 * 24 * 60 * 60 )) * planets[planet]));
+    return ageOnOtherPlanet;
   }
+
 }
