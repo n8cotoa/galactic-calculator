@@ -28,4 +28,8 @@ describe('GalacticAge', function(){
   it('will return the users age in jupiter years', function(){
     expect(testUser.diffPlanetAge('jupiter')).toEqual(284)
   });
+
+  it('will return how many years the user has left to live on each planet', function(){
+    expect(testUser.leftToLive('male', 'mars')).toEqual("")
+  });
 });
