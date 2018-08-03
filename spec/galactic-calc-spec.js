@@ -22,6 +22,6 @@ describe('GalacticAge', function(){
   });
 
   it('will return the users age in mars years', function(){
-    expect(testUser.diffPlanetAge('mars')).toEqual(14)
+    expect(testUser.diffPlanetAge('mars')).toEqual(45)
   });
 });

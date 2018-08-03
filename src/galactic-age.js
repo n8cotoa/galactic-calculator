@@ -13,7 +13,7 @@ export class GalacticAge {
 
   diffPlanetAge(input) {
     let planet = input.toLowerCase();
-    const planets = {mercury: 0.24, venus: 0.62};
+    const planets = {mercury: 0.24, venus: 0.62, mars: 1.88};
     let ageOnOtherPlanet = Math.floor(((this.age / (365 * 24 * 60 * 60 )) * planets[planet]));
     return ageOnOtherPlanet;
   }
