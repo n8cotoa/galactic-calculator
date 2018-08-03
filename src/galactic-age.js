@@ -23,12 +23,11 @@ export class GalacticAge {
     const planets = {mercury: 0.24, venus: 0.62, mars: 1.88, jupiter: 11.86, earth: 1};
     const sex = {male: 76, female: 81};
     let lifeExpectancy = (sex[inputSex] * planets[inputPlanet]);
-    let yearsLeft = (lifeExpectancy - planetAge);
+    let yearsLeft = Math.floor(lifeExpectancy - planetAge);
     if (yearsLeft >= 0) {
       return `You have around ${yearsLeft} years left to live!`
     } else {
       return `You have lived ${Math.abs(yearsLeft)} years past the average life expectancy!`
     }
-    // return yearsLeft;
   }
 }

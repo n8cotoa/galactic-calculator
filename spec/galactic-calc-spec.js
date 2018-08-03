@@ -3,6 +3,7 @@ import { GalacticAge } from './../src/galactic-age';
 describe('GalacticAge', function(){
   let currentDate;
   let testUser;
+
   beforeEach(function(){
     currentDate = Date.now();
     let birthDate = new Date(1993, 11, 27);
@@ -35,7 +36,6 @@ describe('GalacticAge', function(){
   it('will return how many years the user has lived past the avg life expectancy in US for male and females on a chosen planet', function(){
     let birthDate = new Date(1934, 1, 1);
     let oldUser = new GalacticAge(birthDate, currentDate);
-    console.log(oldUser);
     expect(oldUser.leftToLive('male', 'mars')).toEqual(jasmine.stringMatching('You have lived'))
   });
 });
