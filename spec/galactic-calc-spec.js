@@ -24,4 +24,8 @@ describe('GalacticAge', function(){
   it('will return the users age in mars years', function(){
     expect(testUser.diffPlanetAge('mars')).toEqual(45)
   });
+
+  it('will return the users age in jupiter years', function(){
+    expect(testUser.diffPlanetAge('jupiter')).toEqual(45)
+  });
 });
